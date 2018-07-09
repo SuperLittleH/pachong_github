@@ -4,7 +4,7 @@ import  requests
 class TiebaSpider(object):
     def __init__(self):
         self.tieba_name = input('请输入您想看的贴吧:')
-        self.tieba_url = 'https://tieba.baidu.com/f?kw=&pn='
+        self.tieba_url = 'https://tieba.baidu.com/f?'
         self.headers = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; WOW64; Trident/7.0; rv:11.0) like Gecko"}
 
     # 1.发送请求
