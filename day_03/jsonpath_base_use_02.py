@@ -11,7 +11,7 @@ def city_data():
     response = requests.get(url, headers=headers)
     data = response.content.decode()
     # 如果url是json后缀,可以直接使用.json
-    data = response.json()
+    # data = response.json()
 
     # 3.解析数据
     dict_data = json.loads(data)
