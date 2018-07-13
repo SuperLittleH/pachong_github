@@ -14,6 +14,7 @@ if __name__ == '__main__':
            <p class="story">...</p>
        '''
 
+
     # 1.转换类型
     soup = BeautifulSoup(html_data,'lxml')
 
