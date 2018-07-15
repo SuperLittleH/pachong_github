@@ -56,8 +56,10 @@ def renren_login():
 
     # 登陆网址
     login_url = 'http://activity.renren.com/livecell/ajax/clog'
-    response = session.post(login_url, data=context.to_dict()).content.decode()
-
+    result = session.post(login_url, data=context.to_dict()).content.decode()
+    print(result)
+    # 目标网址
+    response = session.get('http://activity.renren.com/myprofile').content.decode()
     with open('01_renren.html','w')as f:
         f.write(response)
 
